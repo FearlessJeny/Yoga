@@ -1,0 +1,250 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	list-style: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 768px;
+	margin: 0 25px;
+}
+
+.grid {
+	display: grid;
+	gap: 24px;
+}
+
+.advantages-yoga-section {
+	width: 100%;
+	min-height: 100vh;
+	background: url(img/yoga.jpg) center/cover no-repeat;
+}
+
+.advantages-yoga-section .title-box {
+	text-align: center;
+}
+
+.advantages-yoga-section .title-box .heading {
+	font-size: clamp(2rem, 2rem + 3vw, 7rem);
+	color: #00ff7f;
+}
+
+.advantages-yoga-section .title-box p {
+	font-size: clamp(0.8rem, 0.8rem + 3vw, 1.5rem);
+}
+
+.advantages-yoga-section .advantages-details {
+	margin-top: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.advantages-details .col-1 {
+	position: relative;
+	width: 100%;
+	padding: 0rem 1.5rem;
+	flex: 0 0 41.6%;
+	max-width: 41.6%;
+}
+
+.advantages-details img {
+	max-width: 5rem;
+	height: auto;
+}
+
+.advantages-details .title {
+	font-size: clamp(1rem, 1rem + 3vw, 2rem);
+	color: #00ff7f;
+	font-weight: 800;
+}
+
+.advantages-details p {
+	font-size: clamp(1rem, 1rem + 3vw, 1.2rem);
+}
+
+.advantages-details-soul {
+	margin: 3rem 0 3rem auto;
+	text-align: right;
+	width: 50%;
+}
+
+.advantages-details-health {
+	margin: 0 auto 5rem;
+	text-align: right;
+	width: 50%;
+}
+.advantages-details-relax {
+	margin-right: auto;
+	text-align: right;
+	width: 50%;
+}
+
+.advantages-details .col-2 {
+	flex: 0 0 16%;
+	max-width: 16%;
+}
+
+.advantages-details-energy {
+	margin-top: 3rem;
+	width: 50%;
+}
+
+.advantages-details-mind {
+	margin: 3rem auto 2.5rem;
+	width: 50%;
+}
+
+.advantages-details-classes {
+	margin-left: auto;
+	width: 50%;
+}
+
+/* ---------------------header------------------- */
+
+.header {
+	background: transparent;
+	width: 100%;
+	height: auto;
+	z-index: 100;
+	/* position: fixed; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* margin: 1rem; */
+}
+
+.logo {
+	/* width: 3rem;
+	height: 3rem; */
+	background: transparent;
+	margin-left: 3.5rem;
+}
+
+.socials {
+	font-size:clamp(1rem, 1rem + 3vw, 2.5rem);
+	margin-right: 8rem;
+	
+}
+
+.socials a i {
+	color: rgb(66, 22, 177);
+	padding: 0 1rem;
+}
+
+/* ------------------footer section start  */
+
+/* .footer {
+	padding-top: 32px;
+} */
+
+.footer-container {
+	row-gap: 16px;
+}
+
+.footer-bg {
+	background-color: #00ff7f;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-title {
+	font-size: clamp(1.2rem, 1.1rem + 0.6vw, 1.7rem);
+	color: #0000ab;
+}
+
+.footer-social {
+	font-size: 18px;
+	margin-right: 25px;
+	color: #0d01fb;
+}
+
+.footer-social:hover {
+	color: #fd0000;
+}
+
+.footer-copy {
+	font-size: 0.9rem;
+	color: #0000ab;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ----------------------- MEDIA ----------------------- */
+
+@media (max-width: 991px) {
+	.advantages-yoga-section {
+		width: 100%;
+		min-height: 100vh;
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url(img/yoga.jpg) center/cover no-repeat;
+	}
+
+	.advantages-yoga-section .col-1 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.advantages-yoga-section .advantages-details-soul,
+	.advantages-details-health,
+	.advantages-details-relax,
+	.advantages-details-energy,
+	.advantages-details-mind,
+	.advantages-details-classes {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto 2.5rem;
+		border: 1px solid #fff;
+		padding: 1.5rem;
+	}
+
+	.advantages-yoga-section .title-box p {
+		color: #fff;
+	}
+	.advantages-details p {
+		color: #fff;
+	}
+
+	html {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	}
+
+	a i.fa-whatsapp {
+		color:#3ebe53
+	}
+	a i.fa-facebook {
+		color:#1500ff
+	}
+	a i.fa-instagram {
+		color: pink;
+	}
+	a i.fa-map {
+		color: rgb(255, 0, 43);
+	}
+	
+}
+
+  @media screen and (min-width: 767px) {
+	.footer-container {
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+	}
+} 
